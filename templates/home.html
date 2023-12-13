@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeatherStill</title>
+  </head>
+  <body>
+    <h1>FeatherStill</h1>
+    {{ session['error'] }} {% if session['user'] %} Hii!!,
+    {{session['user']}}<br />
+    <a href="http://127.0.0.1:5000/logout">
+      <button>Logout</button>
+    </a>
+    {% else %}
+    <a href="http://127.0.0.1:5000/login">
+      <button>Login</button>
+    </a>
+    <a href="http://127.0.0.1:5000/signup">
+      <button>Signup</button>
+    </a>
+    <a href="http://127.0.0.1:5000/login/google">
+      <button>Google</button>
+    </a>
+    {% endif %}
+  </body>
+</html>

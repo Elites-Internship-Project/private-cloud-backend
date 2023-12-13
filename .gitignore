@@ -1,0 +1,15 @@
+# .gitignore
+
+# Ignore the env directory
+/env/
+
+# Other commonly ignored file patterns
+*.log
+*.cache
+*.pyc
+*.swp
+__pycache__/
+*.egg-info/
+*.egg
+
+# Add other patterns as required...
